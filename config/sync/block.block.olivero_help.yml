@@ -1,0 +1,22 @@
+uuid: 85f51a5d-7362-4596-9b3e-c727ea3a2ea5
+langcode: ar
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - olivero
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: olivero_help
+theme: olivero
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: مساعدة
+  label_display: '0'
+  provider: help
+visibility: {  }

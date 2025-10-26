@@ -1,0 +1,10 @@
+uuid: f93006e6-b659-49ae-8f8d-062516a47d8f
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
+id: admin
+label: إدارة
+description: 'روابط المهام الإدارية'
+locked: true

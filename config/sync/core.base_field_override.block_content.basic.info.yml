@@ -1,0 +1,18 @@
+uuid: 16edf9d8-69cb-4f37-bfbf-b839e94aad84
+langcode: ar
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.info
+field_name: info
+entity_type: block_content
+bundle: basic
+label: 'وصف الصندوق'
+description: 'وصف موجز لصندوقك.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

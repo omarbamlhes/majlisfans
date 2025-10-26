@@ -1,0 +1,20 @@
+uuid: ead62d31-f914-4a5f-8d62-b46c10bf0128
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.uid
+field_name: uid
+entity_type: node
+bundle: page
+label: ألّفه
+description: 'اسم المستخدم لمؤلف المحتوى.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

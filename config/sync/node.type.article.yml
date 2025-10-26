@@ -1,0 +1,13 @@
+uuid: 75061bee-aa22-434e-afdd-25e07dd0e1b0
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Fe3N1uqaAyyKJbVkqT-btXy3t98puW8GCRD822xjl10
+name: مقال
+type: article
+description: 'استخدم <em>المقال</em> للمحتويات المتغيرة كالأخبار، والنشرات الصحفية أو ملاحظات المدونة.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

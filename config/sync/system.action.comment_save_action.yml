@@ -1,0 +1,13 @@
+uuid: 2fd20a89-b82e-494d-a4ad-64b8146d4c0d
+langcode: ar
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: 'حفظ التعليق'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

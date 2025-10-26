@@ -1,0 +1,18 @@
+uuid: a8536563-ab3c-4445-8746-6e5c98a989e4
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.created
+field_name: created
+entity_type: node
+bundle: page
+label: 'أُنشِئ يوم'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

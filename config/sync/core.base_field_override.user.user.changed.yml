@@ -1,0 +1,18 @@
+uuid: 18b2adbe-806e-48e2-9865-de0dac4e11a9
+langcode: ar
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.changed
+field_name: changed
+entity_type: user
+bundle: user
+label: 'تم التغير'
+description: 'The time that the user was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

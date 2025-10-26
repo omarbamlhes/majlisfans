@@ -1,0 +1,18 @@
+uuid: 2a9289fa-5706-4d26-89ae-83939c11ea98
+langcode: ar
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: 'الصفحة الأولى'
+description: "The comment author's home page address."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

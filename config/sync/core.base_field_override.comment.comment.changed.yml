@@ -1,0 +1,18 @@
+uuid: d0509286-8f2d-453a-a0db-f2908239b1a2
+langcode: ar
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.changed
+field_name: changed
+entity_type: comment
+bundle: comment
+label: 'تم التغير'
+description: 'وقت التعديل الأخير على التعليق.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

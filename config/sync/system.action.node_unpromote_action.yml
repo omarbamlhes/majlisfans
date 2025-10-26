@@ -1,0 +1,13 @@
+uuid: e6ace469-8b4c-4d78-b19b-316d42d439eb
+langcode: ar
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'ارفع الموضوع من الصفحة الرئيسية'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

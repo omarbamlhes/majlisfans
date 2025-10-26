@@ -1,0 +1,20 @@
+uuid: f3fffdf2-fb21-4e72-8d75-1165e0858f71
+langcode: ar
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.name
+field_name: name
+entity_type: comment
+bundle: comment
+label: الاسم
+description: 'اسم كاتب التعليق.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

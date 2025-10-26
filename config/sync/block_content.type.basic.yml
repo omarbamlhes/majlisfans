@@ -1,0 +1,10 @@
+uuid: 5ce90294-d257-4add-a3dc-c979b2895001
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pQP5iQy4SdhAMVcjDUncCfkJmTofnHVtXrsMzx4k6Yk
+id: basic
+label: 'صندوق أساسي'
+revision: false
+description: 'الصندوق الأساسي يحتوي على عنوان ومتن.'

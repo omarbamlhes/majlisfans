@@ -1,0 +1,14 @@
+uuid: 5c12be8b-7310-429a-a818-e48a96cb6a0b
+langcode: ar
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8rVcRXLnTAEoWs7zl8du-7RIUnayqUcGYnvb3JT21-o
+id: time_zones
+label: 'المناطق الزمنية'
+category: 'التاريخ والتوقيت'
+likert: false
+options: ''

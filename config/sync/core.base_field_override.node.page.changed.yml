@@ -1,0 +1,18 @@
+uuid: c00edcf9-f4c5-4150-b884-1693c28121db
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.changed
+field_name: changed
+entity_type: node
+bundle: page
+label: 'تم التغير'
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

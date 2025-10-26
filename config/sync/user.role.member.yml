@@ -1,0 +1,9 @@
+uuid: 5b3c08cb-5508-4ae8-ae19-2be543d37d43
+langcode: ar
+status: true
+dependencies: {  }
+id: member
+label: عضو
+weight: 4
+is_admin: null
+permissions: {  }

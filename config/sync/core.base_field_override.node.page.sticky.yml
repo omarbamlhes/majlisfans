@@ -1,0 +1,22 @@
+uuid: eb992919-4013-4d22-8b91-d884082d81d2
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.sticky
+field_name: sticky
+entity_type: node
+bundle: page
+label: 'مُثَبَّت أعلى القوائم'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: في
+  off_label: إيقاف
+field_type: boolean

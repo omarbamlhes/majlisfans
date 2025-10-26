@@ -1,0 +1,22 @@
+uuid: 922d66e4-5f67-4add-8f63-ece446a1fa01
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.promote
+field_name: promote
+entity_type: node
+bundle: article
+label: 'مرقّى إلى الصفحة الرئيسية'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: في
+  off_label: إيقاف
+field_type: boolean

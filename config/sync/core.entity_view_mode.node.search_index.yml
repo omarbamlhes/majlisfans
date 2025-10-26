@@ -1,0 +1,13 @@
+uuid: c735c8c1-05a0-4a47-8894-8a9ac7fbb6c4
+langcode: ar
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: r_A0T3aTqGDwLyvoH7wLps-0PM--RHlS8UsiJe_Ac64
+id: node.search_index
+label: 'فهرس البحث'
+description: ''
+targetEntityType: node
+cache: true

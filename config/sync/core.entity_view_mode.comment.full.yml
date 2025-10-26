@@ -1,0 +1,13 @@
+uuid: c8d72e65-ec8e-4533-b140-4256e953c9e4
+langcode: ar
+status: false
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: N4mUjXpPckUkVRY1PbKw4GGoL1i2ECU7PL3EreiKStk
+id: comment.full
+label: 'التعليق بأكمله'
+description: ''
+targetEntityType: comment
+cache: true

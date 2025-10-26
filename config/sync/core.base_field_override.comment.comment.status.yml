@@ -1,0 +1,22 @@
+uuid: e5a9d411-3cb2-47d6-ac59-d90d4620f981
+langcode: ar
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.status
+field_name: status
+entity_type: comment
+bundle: comment
+label: منشور
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
+settings:
+  on_label: في
+  off_label: إيقاف
+field_type: boolean

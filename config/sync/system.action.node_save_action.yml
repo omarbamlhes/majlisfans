@@ -1,0 +1,13 @@
+uuid: 8ffc6898-2836-4eee-8b24-30402fb86aee
+langcode: ar
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LhdsoZPL_pFas2fjaAWue4zvrQ_tEVofLYtcNec-JGM
+id: node_save_action
+label: 'حفظ المحتوى'
+type: node
+plugin: 'entity:save_action:node'
+configuration: {  }

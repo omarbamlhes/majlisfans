@@ -1,0 +1,18 @@
+uuid: 9536c9a8-73b1-4943-bc5a-e289fe9568a5
+langcode: ar
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.title
+field_name: title
+entity_type: menu_link_content
+bundle: menu_link_content
+label: 'عنوان رابط القائمة'
+description: 'النص المستخدم لهذا الرابط في القائمة.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

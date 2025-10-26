@@ -1,0 +1,9 @@
+uuid: 024aacc5-cd4c-438b-b0ed-d76c8d789188
+langcode: ar
+status: true
+dependencies: {  }
+id: supervisor
+label: 'مشرف كبير'
+weight: 5
+is_admin: null
+permissions: {  }

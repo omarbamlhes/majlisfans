@@ -1,0 +1,10 @@
+uuid: 3025b7a6-d3f8-4cee-829b-1354e936743a
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: 'قائمة حساب المستخدم'
+description: 'Links related to the active user account'
+locked: true

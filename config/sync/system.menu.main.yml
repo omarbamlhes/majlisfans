@@ -1,0 +1,10 @@
+uuid: 99838a75-fe16-41fb-901e-c327d67197b3
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'القائمة الرئيسية'
+description: 'Site section links'
+locked: true

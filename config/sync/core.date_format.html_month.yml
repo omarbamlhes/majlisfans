@@ -1,0 +1,10 @@
+uuid: 6eedbd38-e110-432d-93ad-b29aa7bd3168
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z7KuCUwM_WdTNvLcoltuX3_8d-s-8FZkTN6KgNwF0eM
+id: html_month
+label: 'شهر HTML'
+locked: true
+pattern: Y-m

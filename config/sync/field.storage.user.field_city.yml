@@ -1,0 +1,33 @@
+uuid: 5d4ce669-4b09-48ef-bd12-688c8aecf3ad
+langcode: ar
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_city
+field_name: field_city
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: riyadh
+      label: الرياض
+    -
+      value: jeddah
+      label: جدة
+    -
+      value: dmmam
+      label: الدمام
+    -
+      value: makkah
+      label: مكة
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

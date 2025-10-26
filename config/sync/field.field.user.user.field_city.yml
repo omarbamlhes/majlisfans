@@ -1,0 +1,21 @@
+uuid: 1b7dc6f3-c80f-4c0d-b0fd-4883cccba6ed
+langcode: ar
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_city
+  module:
+    - options
+    - user
+id: user.user.field_city
+field_name: field_city
+entity_type: user
+bundle: user
+label: المدينة
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

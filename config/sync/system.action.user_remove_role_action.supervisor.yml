@@ -1,0 +1,14 @@
+uuid: 2684ed94-3128-4c88-b2c7-b721372856bf
+langcode: ar
+status: true
+dependencies:
+  config:
+    - user.role.supervisor
+  module:
+    - user
+id: user_remove_role_action.supervisor
+label: 'Remove the مشرف كبير role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supervisor

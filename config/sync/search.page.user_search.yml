@@ -1,0 +1,14 @@
+uuid: 829b0889-5c82-470e-95bd-224214976083
+langcode: ar
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: المستخدمين
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

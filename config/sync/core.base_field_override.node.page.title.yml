@@ -1,0 +1,18 @@
+uuid: 2866640c-b71d-4af2-99ff-20f4bacc83a5
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.title
+field_name: title
+entity_type: node
+bundle: page
+label: العنوان
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

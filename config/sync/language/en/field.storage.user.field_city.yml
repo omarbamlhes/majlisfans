@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    -
+      label: Riyadh
+    -
+      label: Jeddah
+    -
+      label: Dmmam
+    -
+      label: Makkah

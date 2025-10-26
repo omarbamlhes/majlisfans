@@ -1,0 +1,14 @@
+uuid: d4d006d8-39a4-41c3-89a7-3e5ec41b23f1
+langcode: ar
+status: true
+dependencies:
+  config:
+    - user.role.member
+  module:
+    - user
+id: user_remove_role_action.member
+label: 'Remove the عضو role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: member

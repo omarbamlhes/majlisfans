@@ -1,0 +1,13 @@
+uuid: 618c42ec-0b4f-48b1-899a-c84b63162542
+langcode: ar
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: iukUENpf8CFvjZbGGacKX_Ges0-lU9z6zvsd32P6kbo
+id: taxonomy_term.full
+label: 'صفحة مصطلح تصنيف'
+description: ''
+targetEntityType: taxonomy_term
+cache: true

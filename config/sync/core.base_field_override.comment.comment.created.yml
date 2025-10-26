@@ -1,0 +1,18 @@
+uuid: 1c8a27bd-1f2d-488c-9ae4-37c6350511c3
+langcode: ar
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: الإنشاء
+description: 'وقت إنشاء التعليق.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

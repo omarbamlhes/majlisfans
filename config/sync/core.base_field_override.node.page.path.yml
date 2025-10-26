@@ -1,0 +1,20 @@
+uuid: 5f2e3e1c-a642-4875-8785-09c6860fd87e
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - path
+id: node.page.path
+field_name: path
+entity_type: node
+bundle: page
+label: 'بديل المسار'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,14 @@
+uuid: ce9efd94-a709-4425-9904-a8f80bb6d96c
+langcode: ar
+status: true
+dependencies:
+  config:
+    - user.role.member
+  module:
+    - user
+id: user_add_role_action.member
+label: 'Add the عضو role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: member

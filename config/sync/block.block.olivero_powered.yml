@@ -1,0 +1,22 @@
+uuid: 5d26f3b1-b946-4ee0-a6bc-0d216fc93e71
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: olivero_powered
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'يستخدم دروبال'
+  label_display: '0'
+  provider: system
+visibility: {  }
