@@ -1,0 +1,29 @@
+uuid: b1d14869-07bb-48e6-91db-5ad13535ff74
+langcode: ar
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.management
+    - taxonomy.vocabulary.tags
+id: node.management.field_tags
+field_name: field_tags
+entity_type: node
+bundle: management
+label: وسوم
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

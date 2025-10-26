@@ -1,0 +1,16 @@
+uuid: c9037e2d-a5c3-45af-80fb-2fc9dab6fd28
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.news
+target_entity_type_id: node
+target_bundle: news
+default_langcode: current_interface
+language_alterable: true

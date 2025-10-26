@@ -1,0 +1,24 @@
+uuid: 62632130-54ae-4592-8b3a-eab1cc284865
+langcode: ar
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.management
+  module:
+    - text
+id: node.management.body
+field_name: body
+entity_type: node
+bundle: management
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

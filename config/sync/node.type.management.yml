@@ -1,0 +1,17 @@
+uuid: fc862f6a-5b30-497b-95a9-7f2609ea864d
+langcode: ar
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'مجلس الادارة'
+type: management
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

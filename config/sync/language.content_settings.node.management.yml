@@ -1,0 +1,16 @@
+uuid: a5ffc35d-9b6a-4cae-aa17-4f5c4eaa1085
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.management
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.management
+target_entity_type_id: node
+target_bundle: management
+default_langcode: current_interface
+language_alterable: true
