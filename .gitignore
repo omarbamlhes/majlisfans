@@ -1,0 +1,226 @@
+# Files and directories suggested to be ignored by Drupal
+# @see https://git.drupalcode.org/project/drupal/-/blob/9.3.x/example.gitignore
+#
+# We allow settings.php to be committed since Acquia's filesystem is read-only
+# @see https://www.drupal.org/project/drupal/issues/3257119
+web/core
+vendor/
+node_modules/
+web/sites/*/settings.*.php
+web/sites/*/private
+web/sites/simpletest
+web/sites/*/files/php/
+web/sites/*/files/*/twig
+web/sites/*/files/css/
+web/sites/*/files/js/
+web/sites/*/files/languages/
+web/sites/*/files/styles/
+web/sites/default/files/php/twig/*
+
+# Custom folder from client
+web/sites/default/Abha_New
+web/sites/default/Ahsa_New
+web/sites/default/taef_new
+
+
+
+# Directories specific to this template
+web/libraries
+web/modules/contrib
+web/profiles/contrib
+web/themes/contrib
+
+# Files and directories for common development environments, loosely inherited from BLT Project
+# @see https://github.com/acquia/blt-project/blob/11.x/.gitignore
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+*.launch
+.externalToolBuilders/
+
+# CDT / PDT
+.cproject
+.buildpathk
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# IntelliJ / PhpStorm
+.idea/
+atlassian-ide-plugin.xml
+
+# XHProf
+xhprof_*
+
+# Sass
+.sass-cache
+*.css.map
+
+# Netbeans IDE
+nbproject
+nbproject/*
+
+# DrupalVM
+.vagrant/
+
+# DevDesktop
+*.dd
+
+# NPM
+npm-debug.log
+
+# Drush 9 Checksums
+drush/sites/.checksums
+
+# Deprecation detector rules
+.rules
+
+# PHPCS
+.phpcs-cache
+
+# PHPUnit
+.phpunit.result.cache
+
+# Drupal check report.
+drupal-check-report.xml
+
+# Local files
+local.settings.php
+local.drush.yml
+local.site.yml
+local.services.yml
+*.local
+local.blt.yml
+
+# oauth keys
+oauth_keys/
+# env-file
+/.env*
+
+/web/modules/contrib/*
+/web/themes/contrib/*
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest
+
+/vendor
+
+# Ignore configuration files that may contain sensitive information
+/web/sites/*/*settings.*.php
+/web/sites/*/*.settings*.php
+/web/sites/*/*services.*.yml
+/web/sites/*/*.services*.yml
+/web/sites/*/services*.yml
+
+# Ignore paths that may contain user-generated content
+/web/sites/*/files
+/web/sites/*/public
+/web/sites/*/private
+/web/sites/*/files-public
+/web/sites/*/files-private
+
+
+# Ignore paths that may contain temporary files
+/web/sites/*/translations
+/web/sites/*/tmp
+/web/sites/*/private
+/web/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+/web/vendor
+/web/core
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/README.txt
+/web/themes/README.txt
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.htaccess
+/web/.ht.router.php
+/web/autoload.php
+/web/composer.json
+/web/composer.lock
+/web/example.gitignore
+/web/index.php
+/web/INSTALL.txt
+/web/LICENSE.txt
+/web/README.txt
+/web/README.md
+/web/robots.txt
+/web/update.php
+/web/web.config
+.vscode
+.gitattributes
+.editorconfig
+
+# Ignore Simple Auth files
+private.key
+public.key
+.htaccess
+web.config
+
+#
+/web/libraries
+.idea/sonarlint
+.DS_Store
+
+config/keys/
+.htaccess
+web.config
+/config/jwt/*
+
+# Ignore everything in config/solr
+config/solr/*
+
+# But do not ignore the conf directory within config/solr
+!config/solr/conf
+
+# Inside conf, ignore everything
+config/solr/conf/*
+
+# Except these two files:
+!config/solr/conf/stopwords_ar.txt
+!config/solr/conf/stopwords_en.txt
+
+# Peekaboo monitoring (when installed)
+peekaboo/
+logs/
+web/sites/default/monolog.services.yml

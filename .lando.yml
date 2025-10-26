@@ -1,0 +1,80 @@
+name: majlisfans
+recipe: drupal10
+config:
+  webroot: web
+  php: '8.3'
+  via: apache:2.4
+  database: mysql:8.0
+  framework: drupal
+  env: dev
+  overrides:
+    db:
+      configuration:
+        properties:
+          max_allowed_packet: 200
+proxy:
+  appserver:
+  - local.majlisfans.dev
+env_file:
+  - .lando.env
+services:
+  appserver:
+    scan: false
+  pma:
+    type: phpmyadmin
+    hosts:
+    - database
+  mymailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
+
+tooling:
+  install-majlisfans:
+    service: appserver
+    description: Install the system for local environments.
+    user: root
+    cmd:
+      - mkdir -p private
+      - echo '' > web/sites/default/settings.local.php
+      - echo "██████ Salam! Please take a rest this process will take around 5-7 minutes ██████"
+      - composer install --ignore-platform-reqs
+      - drush si --db-url=mysql://drupal10:drupal10@database:3306/drupal10 --site-name="Majlisfans" -y --account-pass=admin -y
+      - drush cset system.site uuid e652c8c3-1b8e-40bc-bced-de3282f72a01 -y
+      - drush entity:delete shortcut_set -y
+      - drush config-import -y
+      - drush config-import -y
+      - chmod 0777 web/sites/default
+      - echo '<?php\n\n$settings['\''hash_salt'\''] = '\''TwtlyaiVTlqzcUZbqk1cyLCOoe30cMmdj3-2ZMbKOiJJ3XEhMcSpRB3g11uGfCQcj_pgyBq5PQ'\'';\n\n$databases['\''default'\'']['\''default'\''] = array (\n  '\''database'\'' => '\''drupal10'\'',\n  '\''username'\'' => '\''drupal10'\'',\n  '\''password'\'' => '\''drupal10'\'',\n  '\''prefix'\'' => '\'''\'',\n  '\''host'\'' => '\''database'\'',\n  '\''port'\'' => '\''3306'\'',\n  '\''namespace'\'' => '\''Drupal\\Core\\Database\\Driver\\mysql'\'',\n  '\''driver'\'' => '\''mysql'\'',\n);' > web/sites/default/settings.local.php
+      - sh -c "echo '\n// Development only configuration' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.logging'\'']['\''error_level'\''] = '\''verbose'\'';' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.performance'\'']['\''css'\'']['\''preprocess'\''] = FALSE;' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.performance'\'']['\''js'\'']['\''preprocess'\''] = FALSE;' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$settings['\''config_exclude_modules'\''] = [\n  '\''devel'\'',\n  '\''dblog'\'',\n '\''devel_php'\'',\n '\''default_content'\''\n];' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''captcha.settings'\'']['\''default_challenge'\''] = '\''captcha/Math'\'';' >> web/sites/default/settings.local.php"
+      - git config --global --add safe.directory /app
+      - git checkout config/sync
+      - git checkout web/sites/default/settings.php
+      - drush config-import -y
+      - drush cset locale.settings translation.use_source 'remote_and_local' -y
+      - drush locale-check
+      - drush locale-update
+      - drush cr
+      - echo "██████ Installation process has been finished successfully ██████"
+      - echo "██████ Use these credentials admin/admin or the following URL ██████"
+      - drush uli
+
+  dejavu:
+    service: appserver
+    description: Import and apply new config changes (the same automated action that happened before) NOTE git pull then execute this command.
+    cmd:
+    - composer install --no-interaction --ignore-platform-reqs
+    - drush cr
+    - drush config-import -y
+    - drush config-import -y
+    - drush locale:import ar modules/custom/majlisfans/translations/ar.po
+    - drush locale:import ar modules/custom/majlisfans/translations/core_ar.po
+    - drush updb -y
+    - drush cr
+
