@@ -1,0 +1,17 @@
+uuid: 4ee5dd5a-2497-45c5-8943-a11c38f3b258
+langcode: ar
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: أعمالنا
+type: works
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

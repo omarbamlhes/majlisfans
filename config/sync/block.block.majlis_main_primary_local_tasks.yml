@@ -1,0 +1,22 @@
+uuid: fae320da-7e37-4bee-918c-73b752304bf1
+langcode: ar
+status: true
+dependencies:
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: majlis_main_primary_local_tasks
+theme: majlis_main
+region: top_header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'التبويبات الأساسية'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

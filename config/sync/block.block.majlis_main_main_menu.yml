@@ -1,0 +1,27 @@
+uuid: 1cef4aac-afc8-42ba-859a-79a90d03c958
+langcode: ar
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: majlis_main_main_menu
+theme: majlis_main
+region: top_header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'القائمة الرئيسية'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

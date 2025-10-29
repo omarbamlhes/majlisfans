@@ -17,6 +17,8 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.6",
+        "drupal/bootstrap": "^5.0",
+        "drupal/bootstrap_library": "^2.0",
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-project-message": "^10.4",
         "drupal/core-recommended": "^10.4",
@@ -27,7 +29,8 @@
         "drupal/twig_tweak": "^3.4",
         "drupal/vch": "^1.0",
         "drupal/webform": "^6.3@beta",
-        "drush/drush": "^13.6"
+        "drush/drush": "^13.6",
+        "twbs/bootstrap": "^5.3"
     },
     "conflict": {
         "drupal/drupal": "*"

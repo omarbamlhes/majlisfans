@@ -1,0 +1,20 @@
+uuid: e5dafc48-49eb-41a6-be1d-1d5cbae02631
+langcode: ar
+status: true
+dependencies:
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: majlis_main_primary_admin_actions
+theme: majlis_main
+region: top_header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'الإجراءات الإدارية الرئيسية'
+  label_display: '0'
+  provider: core
+visibility: {  }

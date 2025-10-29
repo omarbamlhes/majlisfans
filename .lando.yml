@@ -73,8 +73,8 @@ tooling:
     - drush cr
     - drush config-import -y
     - drush config-import -y
-    - drush locale:import ar modules/custom/majlisfans/translations/ar.po
-    - drush locale:import ar modules/custom/majlisfans/translations/core_ar.po
+    - drush locale:import ar modules/majlis/translations/ar.po
+    - drush locale:import ar modules/majlis/translations/core_ar.po
     - drush updb -y
     - drush cr
 

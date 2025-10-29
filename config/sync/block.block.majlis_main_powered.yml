@@ -1,0 +1,22 @@
+uuid: 5b07760b-216a-4395-a020-4e717591f87a
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: majlis_main_powered
+theme: majlis_main
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'يستخدم دروبال'
+  label_display: '0'
+  provider: system
+visibility: {  }

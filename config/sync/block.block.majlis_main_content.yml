@@ -1,0 +1,22 @@
+uuid: b5f2ca0c-6dd2-4e1b-a185-0da6b90ff8a3
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: majlis_main_content
+theme: majlis_main
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'محتوى الصفحة الرئيسية'
+  label_display: '0'
+  provider: system
+visibility: {  }

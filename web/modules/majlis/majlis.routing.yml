@@ -1,0 +1,7 @@
+majlis.front_page:
+  path: '/front'
+  defaults:
+    _controller: '\Drupal\majlis\Controller\FrontPageController::frontPage'
+    _title: 'Home'
+  requirements:
+    _permission: 'access content'

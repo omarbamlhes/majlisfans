@@ -1,0 +1,23 @@
+uuid: 4a049735-904d-4b48-aa76-cd3fa62bfa81
+langcode: ar
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: majlis_main_search_form_narrow
+theme: majlis_main
+region: top_header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'نموذج البحث (ضيق)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

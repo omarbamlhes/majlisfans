@@ -1,0 +1,25 @@
+uuid: 7a346125-1eca-4440-8a16-d6302e58e4af
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: majlis_main_site_branding
+theme: majlis_main
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'العلامة التجارية للموقع'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: f3816d74-b199-4dfd-8321-0904098d8f8a
+langcode: ar
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: majlis_main_search_form_wide
+theme: majlis_main
+region: top_header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'نموذج البحث (عريض)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

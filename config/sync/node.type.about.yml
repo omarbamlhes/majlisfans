@@ -1,0 +1,17 @@
+uuid: 013e7bd3-e06a-4f05-bf30-3292e27558d8
+langcode: ar
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'من نحن'
+type: about
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

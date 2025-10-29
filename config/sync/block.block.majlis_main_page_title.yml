@@ -1,0 +1,20 @@
+uuid: 6c58cb3f-f183-409e-871b-406c0e646acb
+langcode: ar
+status: true
+dependencies:
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: majlis_main_page_title
+theme: majlis_main
+region: top_header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'عنوان الصفحة'
+  label_display: '0'
+  provider: core
+visibility: {  }

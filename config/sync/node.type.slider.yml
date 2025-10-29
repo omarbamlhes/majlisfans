@@ -1,0 +1,17 @@
+uuid: d92a08cf-e41d-490c-ac7b-093b7e2cddc8
+langcode: ar
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: سلايدر
+type: slider
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

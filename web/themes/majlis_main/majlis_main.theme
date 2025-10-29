@@ -1,0 +1,52 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Functions to support theming in the majlis-main theme.
+ */
+
+use Drupal\Core\Language\LanguageInterface;
+
+/**
+ * Implements template_preprocess().
+ */
+function majlis_main_preprocess(&$variables, $hook)
+{
+  // Always attach the global library
+  $variables['#attached']['library'][] = 'majlis_main/global';
+  
+  // Only attach ltr-css for LTR languages
+  $language_direction = \Drupal::languageManager()->getCurrentLanguage()->getDirection();
+  if ($language_direction === LanguageInterface::DIRECTION_LTR) {
+    $variables['#attached']['library'][] = 'majlis_main/ltr-css';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function majlis_main_preprocess_html(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function majlis_main_preprocess_page(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function majlis_main_preprocess_node(array &$variables): void {
+  // Add the row index for views
+  if (isset($variables['elements']['#view'])) {
+    $view = $variables['elements']['#view'];
+    $variables['row_index'] = isset($view->result_index) ? $view->result_index : 0;
+  }
+}
+
+

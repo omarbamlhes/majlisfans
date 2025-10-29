@@ -1,0 +1,23 @@
+name: Majlisfans Main
+type: theme
+base theme: bootstrap
+description: A flexible theme with a responsive, mobile-first layout.
+package: Custom
+core_version_requirement: ^10 || ^11
+
+libraries-override:
+  system/base: false
+
+regions:
+  top_header: 'Top header'
+  header: 'Header'
+  featured: 'Featured'
+  breadcrumb: 'Breadcrumb'
+  messages: 'Messages'
+  sidebar_first: 'Sidebar first'
+  content: 'Content'
+  sidebar_second: 'Sidebar second'
+  featured_bottom: 'Featured bottom'
+  featured_secondary_bottom: 'Featured secondary bottom'
+  footer: 'Footer'
+  none: 'Avoid rendering unused blocks here'

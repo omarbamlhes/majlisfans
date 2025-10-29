@@ -1,0 +1,22 @@
+uuid: 30470598-1da4-4d10-bc62-bc20b168b955
+langcode: ar
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - majlis_main
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: majlis_main_help
+theme: majlis_main
+region: top_header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: مساعدة
+  label_display: '0'
+  provider: help
+visibility: {  }

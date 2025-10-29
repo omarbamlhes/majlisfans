@@ -1,0 +1,43 @@
+
+rtl-css:
+  css:
+    theme:
+      assets/css/bootstrap.rtl.min.css: { weight: -10 }
+
+ltr-css:
+  css:
+    theme:
+      assets/css/bootstrap.min.css: { weight: -10 }
+
+global:
+  css:
+    theme:
+      # External CDN stylesheets
+      https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap: { type: external }
+      https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css: { type: external }
+      https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css: { type: external }
+      
+      # Local stylesheets
+      assets/lib/animate/animate.min.css: { weight: 0 }
+      assets/lib/owlcarousel/assets/owl.carousel.min.css: { weight: 0 }
+      assets/css/bootstrap.min.css: { weight: 0 }
+      assets/css/style.css: { weight: 0 }
+      css/custom.css: { weight: 0 }
+  js:
+    # External CDN scripts (using only one jQuery version)
+    https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js: { type: external }
+    https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js: { type: external }
+    
+    # Local scripts
+    assets/lib/wow/wow.min.js: {}
+    assets/lib/easing/easing.min.js: {}
+    assets/lib/waypoints/waypoints.min.js: {}
+    assets/lib/owlcarousel/owl.carousel.min.js: {}
+    assets/js/main.js: {}
+    
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+

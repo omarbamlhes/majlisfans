@@ -1,0 +1,17 @@
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="{{ path('<front>') }}" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5">{{ "Majlis"|t }}<span class="text-white">{{ "Fans"|t }}</span><img src="/{{ active_theme_path() }}/images/images.jpeg" class="icon" alt="logo"></h1>
+                    </a>
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                        {{ drupal_menu('main') }}
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
